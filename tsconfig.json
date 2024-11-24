@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "commonjs", // Giữ nguyên vì NestJS sử dụng CommonJS
+    "declaration": true, // Hỗ trợ tạo file .d.ts
+    "removeComments": true, // Loại bỏ comments trong mã biên dịch
+    "emitDecoratorMetadata": true, // Yêu cầu để sử dụng decorators
+    "experimentalDecorators": true, // Hỗ trợ decorators
+    "allowSyntheticDefaultImports": true, // Hỗ trợ import mặc định
+    "esModuleInterop": true, // Cần thiết để import ES Module
+    "target": "ES2021", // Mục tiêu ES2021 để tối ưu hiệu năng
+    "sourceMap": true, // Tạo source map để debug dễ dàng
+    "outDir": "./dist", // Thư mục đầu ra cho mã biên dịch
+    "baseUrl": "./", // Gốc của dự án
+    "incremental": true, // Cải thiện tốc độ biên dịch
+    "skipLibCheck": true, // Bỏ qua kiểm tra types của thư viện
+    "strict": true, // Bật chế độ kiểm tra nghiêm ngặt
+    "strictNullChecks": true, // Yêu cầu kiểm tra null/undefined
+    "noImplicitAny": true, // Ngăn sử dụng kiểu `any` không rõ ràng
+    "strictBindCallApply": true, // Kiểm tra tham số trong `bind`, `call`, `apply`
+    "forceConsistentCasingInFileNames": true, // Đảm bảo phân biệt chữ hoa/thường
+    "noFallthroughCasesInSwitch": true // Ngăn lỗi fallthrough trong switch-case
+  },
+  "exclude": ["node_modules", "dist"], // Loại trừ thư mục không cần thiết
+  "include": ["src/**/*"] // Chỉ định các file nguồn
+}
